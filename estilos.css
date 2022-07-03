@@ -7,30 +7,109 @@
 /* Encabezado */
 
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     background-color: red;
     padding: 0.5rem;
     margin: 0.5rem;
 }
 
-.header__navbar{    
-    list-style-type: none;   
-    text-align: right;    
+.header__navbar{
+    list-style-type: none;
+    text-align: right;
 }
 
 .header__navbar li{
-    display: inline-block;    
+    display: inline-block;
     font-size: 1rem;
-    padding: 0.5rem;     
+    padding: 0.5rem;
 }
 
 .header__navbar a{
     text-decoration: none;
     color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;    
+    font-weight: bold;
 }
-.header__img{
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 246, 246);
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.footer__datos{
     display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.footer__datos h3{
+    color: black;
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+}
+.footer__datos h6{
+    list-style-type: none;
+    text-align: center;
+}
+.footer__datos ul{
+    list-style: none;
+    color: black;
+    font-size: small;
+    font-weight: normal;
+}
+
+.footer__menu{
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+
+
+}
+.footer__menu a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer__menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.footer__menu li{
+    text-align: center;
+    /* text-decoration: none; */
+    color: black
+}
+
+.footer__redes{
+
+    display:inline-block;
+}
+.footer__redes h3{
+
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.footer__redes img{
+    display: inline-block;
+}
+
+h1{
+    color: red;
 }
 
 /*INDEX - MAIN*/
@@ -59,7 +138,7 @@ header{
 .home__fotosMenu{
     display: inline-block;
     padding: 00.5rem;
-    margin: 00.5rem;    
+    margin: 00.5rem;
 }
 .home__fotosMenu h2{
     display: inline-block;
@@ -72,7 +151,7 @@ header{
 .home__fotoMenu{
     display: inline-block;
     padding: 0.5rem;
-    margin: 0.5rem;    
+    margin: 0.5rem;
 }
 .home img{
     width: 70%;
@@ -84,7 +163,7 @@ header{
 .home__fotoMenu__foto{
     display: inline-block;
     padding: 0.5rem;
-    margin: 0.5rem        
+    margin: 0.5rem
 }
 
 
@@ -97,94 +176,21 @@ header{
 }
 .hitoria__titulo{
     display: inline-block;
-    padding-bottom: 0.5rem;      
+    padding-bottom: 0.5rem;
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .historia__parrafo{
     display: inline-block;
     font-size: medium;
-    font-style: normal; 
+    font-style: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;   
+    text-align: justify;
 }
-
-/* FOOTER */
-
-footer{
-    background-color: rgb(113, 113, 113);
-    padding: 0.5rem; 
-    margin: 0.5rem;   
-}
-
-.footer__datos{
-    display: inline-block; 
-    text-align: center;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-.footer__datos h3{
-    color: whitesmoke;
-    display: inline-block;
-    padding: 1rem;
-    text-align: center;
-}
-.footer__datos h6{
-    list-style-type: none;   
-    text-align: center;
-}
-.footer__datos li{
-    color: whitesmoke;
-    font-size: small;
-    font-weight: normal;        
-}
-
-.footer__menu{
-    list-style-type: none;   
-    text-align: center;
-    display: inline-block;
-    
-                     
-}
-.footer__menu a{
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
-}
-
-.footer__menu ul{
-    display: inline-block;
-    list-style-type: none; 
-}
-.footer__menu li{    
-    text-align: center;
-    text-decoration: none;
-    color: whitesmoke    
-}
-
-.footer__redes{
-    
-    display:inline-block;   
-}
-.footer__redes h3{
-    
-    color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-.footer__redes img{
-    display: inline-block;
-}
-
-h1{
-    color: red;
-}
-
 
 /*CSS DE EQUIPOS HISTORICOS*/
 
-.equipos{    
+.equipos{
     padding: 00.5rem;
     margin: 00.5rem;
     text-align: center;
@@ -198,13 +204,13 @@ h1{
 
 /*CSS DE LA PAGINA CAMPEONATO*/
 
-.campeonatos{    
+.campeonatos{
     padding: 00.5rem;
     margin: 00.5rem;
     text-align: center;
 }
 .campeonatos h1{
-    display: block;    
+    display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
@@ -219,29 +225,84 @@ h1{
 }
 .contacto h1{
     display: block;
-    text-align: center;    
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .contacto__formulario{
-    display: inline;
+    display: flex;
+    justify-content: center;
     padding: 0.5rem;
     margin: 0.5rem;
 }
 
 /*CSS DE LA PAGINA GALERIA*/
 
-.galera{
-    text-align: center;
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px repeat(4, 300px);
+    align-items: center;
+    grid-template-areas:
+     "titulo titulo titulo"
+     "img1 img4  img3"
+     "img9 img11  img6"
+     "img7 img5 img10"
+     "img8 img2 img12";
+
 }
-.galeria__fotos img{
-    display:inline-block;
-    padding: 0.5rem;
-    margin: 0.5rem;    
+h1{
+    grid-area: titulo;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.equipoAlumni{
+    grid-area: img1;
+}
+.jugadaPartido{
+    grid-area: img2;
+}
+.MauroRosales{
+    grid-area: img3;
+}
+.equipoCaminando{
+    grid-area: img4;
+}
+.disparoArco{
+    grid-area: img5;
+}
+.entrenamiento{
+    grid-area: img6;
+}
+.equipoViejo{
+    grid-area: img7;
+}
+.festejo{
+    grid-area: img8;
+}
+.festejoGol{
+    grid-area: img9;
+}
+.reserva{
+    grid-area: img10;
+}
+.partidoColon{
+    grid-area: img11;
+}
+.saludo{
+    grid-area: img12;
+}
+
+.galeria img{
+    width: 400px;
+    height: auto;
+    padding: 2px;
+    margin: 2px;
 }
 .galeria__titulo{
     display: block;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 
