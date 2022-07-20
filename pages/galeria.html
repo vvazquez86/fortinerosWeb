@@ -7,18 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
     <link rel="icon" href="../img/icono-escudo.ico">
-    <!-- CSS Boostrap only -->
+    <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- CSS Propio only -->
+    <!-- CSS Propio -->
     <link rel="stylesheet" href="../estilos.css">
 </head>
 
 <body>
 
     <!--Encabezado-->
+
     <header>
+
+        <!-- Menu de navegacion -->
+
         <nav class="navbar navbar-expand-lg header__nav">
+
+            <!-- Menu de navegacion "hamburguesa" -->
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,40 +39,52 @@
                     <a class="nav-link" href="./contacto.html">Contacto</a>
                 </div>
             </div>
+
+            <!-- Botones con link externo al sitio oficial, libro del club y planilla para asociarse -->
+
             <div class="text-end">
                 <a class="btn btn-outline-light" href="https://www.clubatleticoalumni.com.ar/" target="_blank"
                     role="button">Sitio Oficial</a>
                 <a class="btn btn-outline-light" href="https://es.calameo.com/read/004114137e8370219f33a"
                     target="_blank" role="button">Libro de Alumni</a>
+                <a class="btn btn-outline-light" href="https://www.clubatleticoalumni.com.ar/asociate/" target="_blank"
+                    role="button">Asociáte</a>
             </div>
         </nav>
     </header>
 
     <!--Galeria de fotos historicas del club-->
+
     <main class="galeria">
+
+        <h1>Galeria</h1>
+
+        <!-- Estas no son las fotos que van, las fotos son mas antiguas y ya esta hecho el pedido para comenzar a colocarlas -->
         
-            <h1>Galeria</h1>
+        <img class="img-thumbnail" src="../img/Galeria/caminando.jpg" alt="Jugadores caminando">
+        <img class="img-thumbnail" src="../img/Galeria/entrenamiento.jpg" alt="Jugadores entrenando">
+        <img class="img-thumbnail" src="../img/Galeria/disparo.jpg" alt="Disparo al arco">
 
-            <img src="../img/Galeria/caminando.jpg"  alt="Jugadores caminando">
-            <img src="../img/Galeria/entrenamiento.jpg"  alt="Jugadores entrenando">
-            <img src="../img/Galeria/disparo.jpg"alt="Disparo al arco">
+        <img class="img-thumbnail" src="../img/Galeria/equipo.png" alt="Foto del equipo">
+        <img class="img-thumbnail" src="../img/Galeria/esquipo-hoy.png" alt="Foto del equipo actual">
+        <img class="img-thumbnail" src="../img/Galeria/festejo.jpg" alt="Festejo de una victoria">
 
-            <img src="../img/Galeria/equipo.png" alt="Foto del equipo">
-            <img src="../img/Galeria/esquipo-hoy.png" alt="Foto del equipo actual">
-            <img src="../img/Galeria/festejo.jpg" alt="Festejo de una victoria">
+        <img class="img-thumbnail" src="../img/Galeria/festejogol.jpg" alt="Festejo de un gol">
+        <img class="img-thumbnail" src="../img/Galeria/foto-reserva.png" alt="Foto del equipod de la reserva">
+        <img class="img-thumbnail" src="../img/Galeria/jugada.png" alt="Jugada de un partido">
 
-            <img src="../img/Galeria/festejogol.jpg" alt="Festejo de un gol">
-            <img src="../img/Galeria/foto-reserva.png" alt="Foto del equipod de la reserva">
-            <img src="../img/Galeria/jugada.png" alt="Jugada de un partido">
+        <img class="img-thumbnail" src="../img/Galeria/mauro-rosales.png" alt="Foto de Mauro Rosales">
+        <img class="img-thumbnail" src="../img/Galeria/partido-colon.png" alt="Partido contra colo">
+        <img class="img-thumbnail" src="../img/Galeria/saludo.jpg" alt="Jugadores saludando al publcio">
 
-            <img src="../img/Galeria/mauro-rosales.png" alt="Foto de Mauro Rosales">
-            <img src="../img/Galeria/partido-colon.png" alt="Partido contra colo">
-            <img src="../img/Galeria/saludo.jpg" alt="Jugadores saludando al publcio">
-        
     </main>
 
     <!--Pie de pagina-->
+
     <footer>
+
+        <!-- Menu de navegacion del footer -->
+
         <nav class="footer__nav">
             <ul class="footer__lista">
                 <a href="../index.html">
@@ -85,6 +104,9 @@
                 </a>
             </ul>
         </nav>
+
+        <!-- Acceso directo a las redes del club -->
+
         <div class="footer__redes">
             <a href="https://www.facebook.com/alumnivm" target="_blank"><img class="imgfx"
                     src="../img/logos-redes/facebook.png" alt="facebook"></a>
@@ -95,14 +117,18 @@
             <a href="https://www.youtube.com/user/alumnivm" target="_blank"><img class="imgfx"
                     src="../img/logos-redes/youtube.png" alt="youtube"></a>
         </div>
+
+        <!-- Información general de copyright -->
+
         <div class="footer__copy">
             <p>Copyright © 2022 - VH Programador Wer - Todos los derechos reservados</p>
         </div>
     </footer>
+
     <!-- JavaScript Bundle with Popper -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
