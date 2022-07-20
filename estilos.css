@@ -4,10 +4,20 @@
     padding: 0;
 }
 
+/*Otros estilos*/
 .estiloFuente{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+h1 {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+}
+.btnEnviar{
+    margin-top: 2rem;    
+}
+
 /* Encabezado */
 .header__nav{
     background-color: red;
@@ -16,12 +26,6 @@
 .header__nav a{
     color:white;    
 }
-
-/* 
-.footer__nav a:hover:after{    
-   
-           
-} */
 
 /* FOOTER */
 
@@ -73,7 +77,6 @@ footer {
     transform: scaleX(1);        
 }
 
-
 .footer__redes{
     display: flex;
     justify-content: center; 
@@ -89,9 +92,6 @@ footer {
     justify-content: center
 }
 
-h1 {
-    color: red;
-}
 
 /*INDEX - MAIN*/
 
@@ -99,14 +99,6 @@ h1 {
 
 .home {
     text-align: center;
-}
-
-.home__titulo {
-    display: block;
-    padding: 00.5rem;
-    margin: 00.5rem;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Banners*/
@@ -117,47 +109,7 @@ h1 {
     margin: 0.5rem;
 }
 
-.home__fotosMenu {
-    display: inline-block;
-    padding: 00.5rem;
-    margin: 00.5rem;
-}
-
-.home__fotosMenu h2 {
-    display: inline-block;
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/*Primera formacion de alumni foto*/
-
-.home__fotoMenu {
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-
-
-.home__fotoMenu h2 {
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.home__fotoMenu__foto {
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 0.5rem
-}
-
-
 /*Historia*/
-
-.historia {
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
 
 .hitoria__titulo {
     display: inline-block;
@@ -182,24 +134,11 @@ h1 {
     text-align: center;
 }
 
-.equipos__titulo {
-    display: block;
-    color: red;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /*CSS DE LA PAGINA CAMPEONATO*/
 
 .campeonatos {
     padding: 00.5rem;
     margin: 00.5rem;
-    text-align: center;
-}
-
-.campeonatos h1 {
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
@@ -210,129 +149,134 @@ h1 {
     margin: 0.5rem;
 }
 
-.contacto h1 {
+/*CSS DE LA PAGINA GALERIA*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(4, 300px);
+    align-items: center;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "img1 img4  img3"
+        "img9 img11  img6"
+        "img7 img5 img10"
+        "img8 img2 img12";
+}
+
+h1 {
+    grid-area: titulo;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.equipoAlumni {
+    grid-area: img1;
+}
+
+.jugadaPartido {
+    grid-area: img2;
+}
+
+.MauroRosales {
+    grid-area: img3;
+}
+
+.equipoCaminando {
+    grid-area: img4;
+}
+
+.disparoArco {
+    grid-area: img5;
+}
+
+.entrenamiento {
+    grid-area: img6;
+}
+
+.equipoViejo {
+    grid-area: img7;
+}
+
+.festejo {
+    grid-area: img8;
+}
+
+.festejoGol {
+    grid-area: img9;
+}
+
+.reserva {
+    grid-area: img10;
+}
+
+.partidoColon {
+    grid-area: img11;
+}
+
+.saludo {
+    grid-area: img12;
+}
+
+.galeria__titulo {
     display: block;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-/*CSS DE LA PAGINA GALERIA*/
-
-.galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
-
 .galeria img {
-    width: 70%;
-    padding: 1rem;
+    width: 100%;    
     transition: all 300ms;
     position: relative;
+    height: auto;    
+    padding: 1rem;
 }
 .galeria img:hover{
-    transform: scale(1.08);
+    transform: scale(1.03);
     opacity: 80%;         
 }
 
+/*CSS TABLETS*/
 
-/*CSS ESCRITORIO*/
+@media (max-width: 900px){
+    .galeria{
+        justify-items: center;
+        grid-template-rows: 100px repeat(4, 200px);
+    }
+    .galeria img{
+        width: 100%;
+        padding: 1rem;
+        
+    }
 
-@media (min-width: 1200px) {
+}
+
+/*CSS MOBILE*/
+
+@media (max-width: 767px) {
 
     header {
         justify-content: space-between;
         align-items: flex-end;
     }
 
-    .header__navbar ul{
+    .header__navbar li{
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-
-
-/*GALERIA EN ESCRITORIO*/
-    .galeria {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 100px repeat(4, 300px);
-        align-items: center;
-        grid-template-areas:
-            "titulo titulo titulo"
-            "img1 img4  img3"
-            "img9 img11  img6"
-            "img7 img5 img10"
-            "img8 img2 img12";
+    .footer__nav ul {
+         flex-direction: column;        
     }
+    .footer__nav li {
+        padding: 1rem;        
+   }
 
-    h1 {
-        grid-area: titulo;
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+/*GALERIA EN MOBILE*/
 
-    .equipoAlumni {
-        grid-area: img1;
-    }
-
-    .jugadaPartido {
-        grid-area: img2;
-    }
-
-    .MauroRosales {
-        grid-area: img3;
-    }
-
-    .equipoCaminando {
-        grid-area: img4;
-    }
-
-    .disparoArco {
-        grid-area: img5;
-    }
-
-    .entrenamiento {
-        grid-area: img6;
-    }
-
-    .equipoViejo {
-        grid-area: img7;
-    }
-
-    .festejo {
-        grid-area: img8;
-    }
-
-    .festejoGol {
-        grid-area: img9;
-    }
-
-    .reserva {
-        grid-area: img10;
-    }
-
-    .partidoColon {
-        grid-area: img11;
-    }
-
-    .saludo {
-        grid-area: img12;
-    }
-
-    .galeria img {
-        width: 400px;
-        height: auto;
-        padding: 2px;
-        margin: 2px;
-    }
-
-    .galeria__titulo {
-        display: block;
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 }
