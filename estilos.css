@@ -1,5 +1,4 @@
 /*Reset*/
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,10 @@ h1 {
 
 .btnEnviar {
     margin-top: 2rem;
+}
+
+.equipos img{
+    width: auto;
 }
 
 /* Estilos del encabezado */
