@@ -1,1 +1,292 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/*Estilos varios*/
+
+.estiloFuente {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+}
+
+.btnEnviar {
+    margin-top: 2rem;
+}
+
+.equipos img{
+    width: auto;
+}
+
+/* Estilos del encabezado */
+
+.header__nav {
+    background-color: red;
+    padding: 0.5rem;
+}
+
+.header__nav a {
+    color: white;
+}
+
+
+/* Estilos del Footer */
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(248, 246, 246);
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.footer__nav {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.footer__nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    position: relative;
+}
+
+.footer__nav a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: red;
+    /*Animacion*/
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.footer__nav a:hover:after {
+    /*Animacion*/
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.imgfx:hover {
+    opacity: 20%;
+}
+
+.footer__copy {
+    display: flex;
+    justify-content: center
+}
+
+
+/* Estilos del index - main */
+
+/* Titulos */
+
+.home {
+    text-align: center;
+}
+
+/* Estilo de la seccion historia */
+
+.hitoria__titulo {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.historia__parrafo {
+    display: inline-block;
+    font-size: medium;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+/* Estilos de equipos historicos */
+
+.equipos {
+    padding: 00.5rem;
+    margin: 00.5rem;
+    text-align: center;
+}
+
+/* Estilos de campeonatos */
+
+.campeonatos {
+    padding: 00.5rem;
+    margin: 00.5rem;
+    text-align: center;
+}
+
+/* Estilos de contacto */
+
+.contacto {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+/* Estilos de la galeria */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(4, 300px);
+    align-items: center;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "img1 img4  img3"
+        "img9 img11  img6"
+        "img7 img5 img10"
+        "img8 img2 img12";
+}
+
+h1 {
+    grid-area: titulo;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.equipoAlumni {
+    grid-area: img1;
+}
+
+.jugadaPartido {
+    grid-area: img2;
+}
+
+.MauroRosales {
+    grid-area: img3;
+}
+
+.equipoCaminando {
+    grid-area: img4;
+}
+
+.disparoArco {
+    grid-area: img5;
+}
+
+.entrenamiento {
+    grid-area: img6;
+}
+
+.equipoViejo {
+    grid-area: img7;
+}
+
+.festejo {
+    grid-area: img8;
+}
+
+.festejoGol {
+    grid-area: img9;
+}
+
+.reserva {
+    grid-area: img10;
+}
+
+.partidoColon {
+    grid-area: img11;
+}
+
+.saludo {
+    grid-area: img12;
+}
+
+.galeria__titulo {
+    display: block;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.galeria img {
+    width: 90%;
+    transition: all 300ms;
+    position: relative;
+    height: auto;
+    padding: 0.2rem;
+    margin-left: 1rem;    
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+    opacity: 80%;
+}
+
+/* Estilos para tablets */
+
+@media (max-width: 900px) {
+    
+    .galeria {
+        justify-items: center;
+        grid-template-rows: 100px repeat(4, 200px);
+    }
+    .galeria img {
+        width: 90%;
+        padding: 1rem;
+        margin: 1rem;
+        align-items: center;
+    }
+}
+
+/* Estilo para celulares */
+
+@media (max-width: 767px) {
+
+    header {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .header__navbar li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer__nav ul {
+        flex-direction: column;
+        align-items: center
+    }
+    .footer__nav li {
+        padding: 1rem;
+    }
+    .footer__copy{
+        text-align: center;        
+    }
+    
+    /*Estilo para la galeria en celulares*/
+
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
