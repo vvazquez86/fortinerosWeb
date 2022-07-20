@@ -4,23 +4,28 @@
     padding: 0;
 }
 
-.colorNav{
-    background-color: red;       
-}
 .estiloFuente{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* CSS FIRST MOBILE*/
-
 /* Encabezado */
+.header__nav{
+    background-color: red;
+    padding: 0.5rem;    
+}
+.header__nav a{
+    color:white;    
+}
 
-
+/* 
+.footer__nav a:hover:after{    
+   
+           
+} */
 
 /* FOOTER */
 
-footer {
-    display: flex;
+footer {    
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -29,56 +34,60 @@ footer {
     margin: 0.5rem;
 }
 
-.footer__datos {
+.footer__nav {    
+    list-style-type: none;    
+    padding: 1rem;    
+}
+
+.footer__nav ul {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 2rem;
-
-}
-
-.footer__datos ul {
-    list-style: none;
-    color: black;
-    font-size: small;
-    font-weight: normal;
-}
-
-.footer__menu {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    text-align: center;    
-    padding: 2rem;
-}
-
-.footer__menu a {
-    text-decoration: none;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.footer__menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;  
     list-style: none;
     text-decoration: none;
 }
+.footer__nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    position: relative;
+}
+.footer__nav a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: red;
+    /*Animacion*/
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+.footer__nav a:hover:after{    
+    /*Animacion*/
+    transform-origin: left;
+    transform: scaleX(1);        
+}
 
-.footer__menu li {
-    text-align: center;    
-    color: black
-} */
 
 .footer__redes{
-    display: inline-block;
-    align-items: center;
+    display: flex;
+    justify-content: center; 
+    padding: 2rem;    
 }
 
+.imgfx:hover{
+    opacity: 20%;   
+}
 
+.footer__copy{
+    display: flex;
+    justify-content: center
+}
 
 h1 {
     color: red;
@@ -128,9 +137,7 @@ h1 {
     margin: 0.5rem;
 }
 
-.home img {
-    width: 70%;
-}
+
 
 .home__fotoMenu h2 {
     color: red;
@@ -217,11 +224,18 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
 }
 
 .galeria img {
     width: 70%;
     padding: 1rem;
+    transition: all 300ms;
+    position: relative;
+}
+.galeria img:hover{
+    transform: scale(1.08);
+    opacity: 80%;         
 }
 
 

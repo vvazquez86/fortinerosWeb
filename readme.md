@@ -5,4 +5,9 @@
 <ul>
     <li>HTML 5</li>
     <li>CSS 3</li>
+    <li>Bootstrap</li>
+    <li>SASS</li>
 </ul>
+<h4>Anotaciones extras</h4>
+<p>Este sitio fue realizado como trabajo final del curso de CoderHouse - Desarrolo Web.</p>
+<p>Sitio creado por VH Programador Web, todos los derechos reservado</p>

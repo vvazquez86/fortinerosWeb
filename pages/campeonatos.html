@@ -16,36 +16,28 @@
 
 <body>
     <!--Encabezado-->
-    <header class="p-3 text-white colorNav">
-
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/index.html" class="nav-link px-2 estiloFuente">
-                        <font style="vertical-align: inherit;">Home</font>
-                    </a></li>
-                <li><a href="./equipos.html" class="nav-link px-2 estiloFuente">
-                        <font style="vertical-align: inherit;">Equipos Historicos</font>
-                    </a></li>
-                <li><a href="#" class="nav-link px-2 estiloFuente">
-                        <font style="vertical-align:inherit ;">Campeonatos</font>
-                    </a></li>
-                <li><a href="./galeria.html" class="nav-link px-2 estiloFuente">
-                        <font style="vertical-align: inherit;">Galeria</font>
-                    </a></li>
-                <li><a href="./contacto.html" class="nav-link px-2 estiloFuente">
-                        <font style="vertical-align: inherit;">Contacto</font>
-                    </a></li>
-            </ul>
-
+    <header>
+        <nav class="navbar navbar-expand-lg header__nav">                                 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../index.html">Home</a>    
+                    <a class="nav-link" href="./equipos.html">Equipos historicos</a>
+                    <a class="nav-link active" aria-current="page" href="#">Campeonatos</a> 
+                    <a class="nav-link" href="./galeria.html">Galeria</a> 
+                    <a class="nav-link" href="./contacto.html">Contacto</a>                     
+                </div>
+            </div>
             <div class="text-end">
                 <a class="btn btn-outline-light" href="https://www.clubatleticoalumni.com.ar/" target="_blank"
                     role="button">Sitio Oficial</a>
                 <a class="btn btn-outline-light" href="https://es.calameo.com/read/004114137e8370219f33a"
                     target="_blank" role="button">Libro de Alumni</a>
-            </div>
-        </div>
-        </div>
+            </div>  
+        </nav>
     </header>
 
     <!--Este sitio se va a ir construyendo a medida que se junte informacion fidedigna del tema-->
@@ -56,28 +48,25 @@
     </main>
 
     <!--Pie de pagina-->
-    <footer class="d-flex flex-wrap justify-content-center align-items-end py-4 my-3 border-top">
-        <div class="row justify-content-center align-items-center">
-            <ul class="nav col-md-8 justify-content-center">
-                <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a>
-                </li>
-                <li class="nav-item"><a href="../pages/equipos.html" class="nav-link px-2 text-muted">Equipos
-                        Historicos</a></li>
-                <li class="nav-item"><a href="#"
-                        class="nav-link px-2 text-muted">Campeonatos</a>
-                </li>
-                <li class="nav-item"><a href="../pages/galeria.html" class="nav-link px-2 text-muted">Galeria</a></li>
-                <li class="nav-item"><a href="../pages/contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+    <footer>
+        <nav class="footer__nav">
+            <ul class="footer__lista">
+                <a href="../index.html"><li>Home</li> </a>
+                <a href="./equipos.html"><li>Equipos Historicos</li></a>
+                <a href="#"><li>Campeonatos</li></a> 
+                <a href="./galeria.html"><li>Galeria</li></a>
+                <a href="./contacto.html"><li>Contacto</li></a>
             </ul>
-            <ul class="nav col-md-8 justify-content-center list-unstyled d-flex">
-                <li class="ms-3"><img src="../img/logos-redes/facebook.png" alt="facebook"></li>
-                <li class="ms-3"><img src="../img/logos-redes/instagram.png" alt="instagram"></li>
-                <li class="ms-3"><img src="../img/logos-redes/twitter.png" alt="twitter"></li>
-                <li class="ms-3"><img src="../img/logos-redes/youtube.png" alt="youtube"></li>
-            </ul>
-            <p class="nav col-md-8 justify-content-center p-4">© 2022 VH Programador Web, Todos los derechos reservado.
-            </p>
-        </div>
+    </nav>
+            <div class="footer__redes">
+                <a href="https://www.facebook.com/alumnivm" target="_blank"><img class="imgfx" src="../img/logos-redes/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/alumnivm/" target="_blank"><img class="imgfx" src="../img/logos-redes/instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/AlumniVM" target="_blank"><img class="imgfx" src="../img/logos-redes/twitter.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/user/alumnivm" target="_blank"><img class="imgfx" src="../img/logos-redes/youtube.png" alt="youtube"></a>
+            </div>
+            <div class="footer__copy">
+                <p>Copyright © 2022 - VH Programador Wer - Todos los derechos reservados</p>
+            </div>       
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
