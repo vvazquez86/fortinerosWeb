@@ -17,6 +17,9 @@ h1 {
 .btnEnviar{
     margin-top: 2rem;    
 }
+.equipos img{
+    width: auto;
+}
 
 /* Encabezado */
 .header__nav{
@@ -264,19 +267,13 @@ h1 {
         flex-direction: row;
         align-items: center;
     }
-    .footer__nav ul {
-         flex-direction: column;        
-    }
-    .footer__nav li {
-        padding: 1rem;        
-   }
+   
 
 /*GALERIA EN MOBILE*/
 
 .galeria {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;    
 }
 }
