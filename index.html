@@ -11,14 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS Propio -->
-    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
 
     <!--Encabezado-->
     
-    <header>
+    <header class="header">
         <!-- Menu de navegacion -->
         <nav class="navbar navbar-expand-lg header__nav">
             
@@ -28,8 +28,8 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+            <div class="collapse navbar-collapse header__nav__link" id="navbarNavAltMarkup">
+                <div class="navbar-nav header__nav__link__a">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="./pages/equipos.html">Equipos historicos</a>
                     <a class="nav-link" href="./pages/campeonatos.html">Campeonatos</a>
@@ -78,12 +78,12 @@
 
         <!-- Seccion con historias breves del club, la que figura es como nacio, faltan 2 mas: el ascenso al Argentino A y el dia del hincha -->
 
-        <section class="container-fluid">
+        <section class="container-fluid home__historia">
             <div class="row p-5 align-items-center">
 
                 <div class="col-lg-7 col-md-12 col-xs-12">
-                    <h2 class="hitoria__titulo">Historia breve de un gran club</h2>
-                    <article class="historia__parrafo">
+                    <h2 class="home__historia-t">Historia breve de un gran club</h2>
+                    <article class="home__historia-p">
                         El Club Atlético Alumni nace a causa de la fusión de otros dos clubes de Villa María: el Club
                         Blanco y
                         Negro y el Club Internacional, el 4 de abril de 1934. El club nace bajo la conducción de
@@ -120,12 +120,12 @@
 
         <!--Pie de pagina-->
 
-        <footer>
+        <footer class="footer">
 
             <!-- Menu de navegacion del footer -->
 
             <nav class="footer__nav">
-                <ul class="footer__lista">
+                <ul>
                     <a href="#">
                         <li>Home</li>
                     </a>
@@ -147,13 +147,13 @@
             <!-- Acceso directo a las redes del club -->
 
             <div class="footer__redes">
-                <a href="https://www.facebook.com/alumnivm" target="_blank"><img class="imgfx"
+                <a href="https://www.facebook.com/alumnivm" target="_blank"><img class="footer__redes-xf"
                         src="./img/logos-redes/facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/alumnivm/" target="_blank"><img class="imgfx"
+                <a href="https://www.instagram.com/alumnivm/" target="_blank"><img class="footer__redes-xf"
                         src="./img/logos-redes/instagram.png" alt="instagram"></a>
-                <a href="https://twitter.com/AlumniVM" target="_blank"><img class="imgfx"
+                <a href="https://twitter.com/AlumniVM" target="_blank"><img class="footer__redes-xf"
                         src="./img/logos-redes/twitter.png" alt="twitter"></a>
-                <a href="https://www.youtube.com/user/alumnivm" target="_blank"><img class="imgfx"
+                <a href="https://www.youtube.com/user/alumnivm" target="_blank"><img class="footer__redes-xf"
                         src="./img/logos-redes/youtube.png" alt="youtube"></a>
             </div>
 
