@@ -1,205 +1,162 @@
+/*Variables*/
 /*VARIABLES DE COLORES*/
+/*es un gris claro*/
+/*es un gris mas oscuro*/
+/*Spacing*/
 /*VARIABLES DE TEXTO*/
+/*Font-Size*/
+/*Normalizadores*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Oswald:wght@500&family=Square+Peg&display=swap");
 /*Reset*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
-/*Estilos varios*/
-.estiloFuente {
-  color: #f0eeee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+html {
+  font-size: 90%; }
+
+body {
+  font-family: "Nunito Sans", sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black; }
 
 h1 {
-  color: red;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 36px; }
+  text-align: center; }
 
-/* Estilos del encabezado */
+h2 {
+  color: red;
+  font-family: "Nunito Sans", sans-serif; }
+
+h3 {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/*Mixins*/
+/*Header*/
 .header__nav {
   background-color: red;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  border-bottom: 2px solid #9e9393;
+  border-top: 2px solid #9e9393; }
 
-.header a {
-  color: #f0eeee; }
+.header__nav a {
+  color: white; }
 
-/* Estilos del Footer */
-.footer {
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  background-color: #f0eeee;
-  padding: 0.5rem;
-  margin: 0.5rem; }
-  .footer__nav {
-    list-style-type: none;
+  padding: 2rem;
+  border-bottom: 2px solid #9e9393;
+  border-top: 2px solid #9e9393;
+  margin-top: 20px;
+  background-color: #f0eeee; }
+  footer .footer__nav {
     padding: 1rem; }
-    .footer__nav ul {
-      display: flex;
-      justify-content: space-evenly;
-      list-style: none;
-      text-decoration: none; }
-    .footer__nav a {
-      text-decoration: none;
-      color: black;
-      font-size: 16px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-style: italic;
-      position: relative; }
-      .footer__nav a:after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background: red;
-        /*Animacion*/
-        transform-origin: right;
-        transform: scaleX(0);
-        transition: transform 0.25s ease-in-out; }
-      .footer__nav a:hover:after {
-        /*Animacion*/
-        transform-origin: left;
-        transform: scaleX(1); }
-  .footer__redes {
-    display: flex;
-    justify-content: center;
-    padding: 2rem; }
-    .footer__redes-xf:hover {
-      opacity: 20%; }
-  .footer__copy {
-    display: flex;
-    justify-content: center; }
-
-/* Estilos del index - main */
-.home {
-  text-align: center; }
-  .home__historia-t {
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .home__historia-p {
-    display: inline-block;
-    font-size: medium;
-    font-style: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify; }
-
-/* Estilos de equipos historicos */
-.equipos {
-  padding: 00.5rem;
-  margin: 00.5rem;
-  text-align: center; }
-
-/* Estilos de campeonatos */
-.campeonatos {
-  padding: 00.5rem;
-  margin: 00.5rem;
-  text-align: center; }
-
-/* Estilos de contacto */
-.contacto {
-  padding: 0.5rem;
-  margin: 0.5rem; }
-  .contacto__btn {
-    margin-top: 2rem; }
-  .contacto__h1 {
-    text-align: center;
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-/* Estilos de la galeria */
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px repeat(4, 300px);
-  align-items: center;
-  grid-template-areas: "titulo titulo titulo" "img1 img4  img3" "img9 img11  img6" "img7 img5 img10" "img8 img2 img12"; }
-  .galeria__h1 {
-    grid-area: titulo;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .galeria img {
-    width: 90%;
-    transition: all 300ms;
-    position: relative;
-    height: auto;
-    padding: 0.2rem;
-    margin-left: 1rem; }
-    .galeria img:hover {
-      transform: scale(1.03);
-      opacity: 80%; }
-
-.equipoAlumni {
-  grid-area: img1; }
-
-.jugadaPartido {
-  grid-area: img2; }
-
-.MauroRosales {
-  grid-area: img3; }
-
-.equipoCaminando {
-  grid-area: img4; }
-
-.disparoArco {
-  grid-area: img5; }
-
-.entrenamiento {
-  grid-area: img6; }
-
-.equipoViejo {
-  grid-area: img7; }
-
-.festejo {
-  grid-area: img8; }
-
-.festejoGol {
-  grid-area: img9; }
-
-.reserva {
-  grid-area: img10; }
-
-.partidoColon {
-  grid-area: img11; }
-
-.saludo {
-  grid-area: img12; }
-
-/* Estilos para tablets */
-@media (max-width: 900px) {
-  .galeria {
-    justify-items: center;
-    grid-template-rows: 100px repeat(4, 200px); }
-    .galeria img {
-      width: 90%;
-      padding: 1rem;
-      margin: 1rem;
-      align-items: center; } }
-
-/* Estilo para celulares */
-@media (max-width: 767px) {
-  .header {
-    justify-content: space-between;
-    align-items: flex-end; }
-    .header__navbar li {
+    footer .footer__nav ul {
       display: flex;
       flex-direction: row;
+      justify-content: space-evenly;
       align-items: center; }
-  .footer__nav ul {
-    flex-direction: column;
-    align-items: center; }
-  .footer__nav li {
-    padding: 1rem; }
-  .footer__redes {
-    justify-content: space-evenly; }
-  .footer__copy {
-    text-align: center; }
-  /*Estilo para la galeria en celulares*/
-  .galeria {
+    footer .footer__nav a {
+      font-size: 1.4rem;
+      position: relative;
+      margin-left: 2rem; }
+    footer .footer__nav a:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: red;
+      /*Animacion*/
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.25s ease-in-out; }
+    footer .footer__nav a:hover:after {
+      /*Animacion*/
+      transform-origin: left;
+      transform: scaleX(1); }
+  footer .footer__redes {
     display: flex;
-    flex-direction: column;
-    align-items: center; } }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; }
+    footer .footer__redes-xf:hover {
+      opacity: 50%; }
+  footer .footer__copy {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem; }
+
+/*Main Home*/
+main h1 {
+  color: red;
+  font-family: "Oswald", serif;
+  margin: 3rem;
+  padding: 2rem;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red; }
+
+main .home {
+  text-align: center; }
+  main .home__historia h2 {
+    display: inline-block;
+    padding-bottom: 1rem;
+    color: red;
+    font-family: "Oswald", serif; }
+  main .home__historia article {
+    display: inline-block;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: justify; }
+
+/*Galeria*/
+.galeria__fotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .galeria__fotos img {
+    width: 80%;
+    height: 80%; }
+
+/*Equipos histopricos*/
+.equipos__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem;
+  text-align: center; }
+
+.equipos h1 {
+  text-align: center; }
+
+/*Campeonatos*/
+.campeonatos {
+  text-align: center; }
+  .campeonatos img {
+    width: 25px; }
+
+/*Galeria*/
+.galeria__fotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .galeria__fotos img {
+    width: 80%;
+    height: 80%; }

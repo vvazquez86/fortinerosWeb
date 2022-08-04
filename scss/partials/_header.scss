@@ -1,0 +1,9 @@
+.header__nav {
+    background-color: red;
+    padding: 0.5rem;
+    @include border($color-alternativo)
+}
+
+.header__nav a {
+    color: white;
+}

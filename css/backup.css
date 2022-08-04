@@ -155,6 +155,11 @@ footer {
 }
 
 /* Estilos de la galeria */
+h1 {
+    grid-area: titulo;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -166,12 +171,6 @@ footer {
         "img9 img11  img6"
         "img7 img5 img10"
         "img8 img2 img12";
-}
-
-h1 {
-    grid-area: titulo;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .equipoAlumni {

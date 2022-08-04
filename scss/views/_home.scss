@@ -1,0 +1,29 @@
+main {
+    h1 {
+        color: $color-principal;
+        font-family: $font-title;
+        margin: $spacing-medium;
+        padding: $spacing-small;
+        @include border ($color-principal)
+    }
+    .home{
+        text-align: center;        
+        &__historia{
+            h2{
+                display: inline-block;                
+                padding-bottom: $spacing-xsmall;
+                color: $color-principal;
+                font-family: $font-title;
+            }
+            article{
+                display: inline-block;
+                font-size: $text-xsmall;
+                font-style: normal;
+                font-family: $font-principal;
+                text-align: justify;
+            }
+        }        
+    }   
+        
+}
+

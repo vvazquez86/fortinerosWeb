@@ -1,0 +1,8 @@
+.equipos__card{
+    @include flex (row, space-evenly, center);
+    margin: $spacing-small;
+    text-align: center;
+}
+.equipos h1{
+    text-align: center;
+}

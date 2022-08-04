@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Oswald:wght@500&family=Square+Peg&display=swap');
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+html{
+    font-size: 90%;
+}
+body{
+    font-family: $font-principal;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family: $font;
+    color: $color-link;    
+}
+h1{
+    text-align: center;
+}
+h2{
+    color: $color-principal;
+    font-family: $font-principal;
+}
+h3{
+    color: $color-principal;
+    font-family: $font;
+}

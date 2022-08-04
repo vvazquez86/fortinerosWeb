@@ -1,0 +1,9 @@
+.galeria{    
+    &__fotos{
+        @include flex (row, space-evenly, center);
+        & img{
+            width: 80%;
+            height: 80%;
+        }                      
+    }
+}
