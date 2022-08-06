@@ -124,14 +124,19 @@ main .home {
     text-align: justify; }
 
 /*Galeria*/
-.galeria__fotos {
+.galeria img {
+  width: 97%;
+  margin: 5px;
+  padding: 5px; }
+  .galeria img:hover {
+    opacity: 50%;
+    background-color: #f0eeee; }
+
+.galeria__row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
-  .galeria__fotos img {
-    width: 80%;
-    height: 80%; }
+  padding: 3rem; }
+  .galeria__row-col {
+    flex: 25%; }
 
 /*Equipos histopricos*/
 .equipos__card {
@@ -152,11 +157,16 @@ main .home {
     width: 25px; }
 
 /*Galeria*/
-.galeria__fotos {
+.galeria img {
+  width: 97%;
+  margin: 5px;
+  padding: 5px; }
+  .galeria img:hover {
+    opacity: 50%;
+    background-color: #f0eeee; }
+
+.galeria__row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; }
-  .galeria__fotos img {
-    width: 80%;
-    height: 80%; }
+  padding: 3rem; }
+  .galeria__row-col {
+    flex: 25%; }

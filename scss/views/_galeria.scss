@@ -1,9 +1,19 @@
 .galeria{    
-    &__fotos{
-        @include flex (row, space-evenly, center);
-        & img{
-            width: 80%;
-            height: 80%;
-        }                      
+    img{
+        width: 97%;        
+        margin: 5px;        
+        padding: 5px;
+        &:hover{
+            opacity: 50%;
+            background-color: $color-secundario;            
+        }
     }
+    &__row{
+        display: flex;
+        padding: $spacing-medium;
+        &-col{
+            flex: 25%;                
+        }
+    }    
 }
+
