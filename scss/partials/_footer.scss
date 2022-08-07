@@ -1,48 +1,32 @@
 footer{
     @include flex (column, space-between, center);
-    padding: $spacing-small;
+    
     @include border($color-alternativo);
     margin-top: 20px;
     background-color: $color-secundario;
-    .footer__nav {    
+    .footer__boton {        
         padding: $spacing-xsmall;
-        & ul{
-            @include flex (row, space-evenly, center)    
-        }
-        & a{
-            font-size: $text-small;
-            position: relative;
-            margin-left: $spacing-small;     
-        }
-        & a:after {
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 2px;
-            width: 100%;
-            background: $color-principal;
-            /*Animacion*/
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: transform 0.25s ease-in-out;
-        }
-        & a:hover:after {
-            /*Animacion*/
-            transform-origin: left;
-            transform: scaleX(1);    
-        }
+        margin: $spacing-xsmall;              
     }
+    .boton{       
+        display: flex;
+        justify-content: space-around;
+        margin-top: $spacing-small     
+    }
+    
     .footer__redes{
-        @include flex (row, space-between, center);
+        @include flex (row, center, center);
         padding: $spacing-xsmall;
         &-xf:hover {
             opacity: 50%;
         }
     }
-    .footer__copy {    
+    .footer__copy {
+        text-align: center;    
         font-family: $font-principal;
         font-size: $text-xsmall;
-    }    
+    }
+      
 }
+
+ 

@@ -22,6 +22,10 @@ main {
                 font-family: $font-principal;
                 text-align: justify;
             }
+        }
+        &__pato{
+            display: flex;
+            flex-direction: row-reverse;
         }        
     }   
         

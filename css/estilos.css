@@ -5,6 +5,7 @@
 /*Spacing*/
 /*VARIABLES DE TEXTO*/
 /*Font-Size*/
+/*Variables de medias querys*/
 /*Normalizadores*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Oswald:wght@500&family=Square+Peg&display=swap");
 /*Reset*/
@@ -52,51 +53,32 @@ h3 {
 /*Footer*/
 footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
   border-bottom: 2px solid #9e9393;
   border-top: 2px solid #9e9393;
   margin-top: 20px;
   background-color: #f0eeee; }
-  footer .footer__nav {
-    padding: 1rem; }
-    footer .footer__nav ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center; }
-    footer .footer__nav a {
-      font-size: 1.4rem;
-      position: relative;
-      margin-left: 2rem; }
-    footer .footer__nav a:after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background: red;
-      /*Animacion*/
-      transform-origin: right;
-      transform: scaleX(0);
-      transition: transform 0.25s ease-in-out; }
-    footer .footer__nav a:hover:after {
-      /*Animacion*/
-      transform-origin: left;
-      transform: scaleX(1); }
+  footer .footer__boton {
+    padding: 5px;
+    margin: 5px; }
+  footer .boton {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem; }
   footer .footer__redes {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1rem; }
+    padding: 5px; }
     footer .footer__redes-xf:hover {
       opacity: 50%; }
   footer .footer__copy {
+    text-align: center;
     font-family: "Nunito Sans", sans-serif;
     font-size: 1rem; }
 
@@ -113,7 +95,7 @@ main .home {
   text-align: center; }
   main .home__historia h2 {
     display: inline-block;
-    padding-bottom: 1rem;
+    padding-bottom: 5px;
     color: red;
     font-family: "Oswald", serif; }
   main .home__historia article {
@@ -122,6 +104,9 @@ main .home {
     font-style: normal;
     font-family: "Nunito Sans", sans-serif;
     text-align: justify; }
+  main .home__pato {
+    display: flex;
+    flex-direction: row-reverse; }
 
 /*Galeria*/
 .galeria img {
@@ -134,17 +119,28 @@ main .home {
 
 .galeria__row {
   display: flex;
+  flex-wrap: wrap;
   padding: 3rem; }
   .galeria__row-col {
     flex: 25%; }
 
+@media (max-width: 768px) {
+  .galeria__row-col {
+    flex: 100%; }
+  .galeria__row {
+    padding-top: 0.5px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .galeria__row-col {
+    flex: 50%; } }
+
 /*Equipos histopricos*/
 .equipos__card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 2rem;
   text-align: center; }
 
 .equipos h1 {
@@ -156,6 +152,9 @@ main .home {
   .campeonatos img {
     width: 25px; }
 
+.tablas {
+  padding: 10rem; }
+
 /*Galeria*/
 .galeria img {
   width: 97%;
@@ -167,6 +166,19 @@ main .home {
 
 .galeria__row {
   display: flex;
+  flex-wrap: wrap;
   padding: 3rem; }
   .galeria__row-col {
     flex: 25%; }
+
+@media (max-width: 768px) {
+  .galeria__row-col {
+    flex: 100%; }
+  .galeria__row {
+    padding-top: 0.5px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .galeria__row-col {
+    flex: 50%; } }
+
+/*Maps*/

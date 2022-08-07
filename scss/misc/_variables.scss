@@ -13,7 +13,7 @@ $spacing-xlarge: 8rem;
 $spacing-large: 6rem;
 $spacing-medium: 3rem;
 $spacing-small: 2rem;
-$spacing-xsmall: 1rem;
+$spacing-xsmall: 5px;
 
 
 /*VARIABLES DE TEXTO*/
@@ -28,4 +28,9 @@ $text-medium: 2.2rem;
 $text-base: 1.6rem;
 $text-small: 1.4rem;
 $text-xsmall: 1rem;
+
+/*Variables de medias querys*/
+$smartphone: 768px;
+$tablets: 992px;
+$desktop: 1400px;
 

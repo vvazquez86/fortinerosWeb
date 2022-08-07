@@ -1,3 +1,4 @@
+
 .galeria{    
     img{
         width: 97%;        
@@ -10,10 +11,27 @@
     }
     &__row{
         display: flex;
+        flex-wrap: wrap;
         padding: $spacing-medium;
         &-col{
-            flex: 25%;                
+            flex: 25%;                                                
         }
-    }    
+    }
+                 
 }
+@media (max-width: $smartphone) {
+    .galeria__row-col{
+        flex: 100%;
+    }
+    .galeria__row{
+        padding-top: 0.5px;
+    }      
+}
+@media (min-width: $smartphone) and (max-width: $tablets) {
+    .galeria__row-col{
+        flex: 50%;
+    }    
+} 
+
+ 
 

@@ -86,6 +86,7 @@
 
         <!-- Seccion con historias breves del club -->
         <section class="container-fluid home">
+
             <div class="row p-5 align-items-center">
 
                 <div class="col-lg-7 col-md-12 col-xs-12 home__historia">
@@ -123,10 +124,7 @@
                 </div>
             </div>
 
-            <div class="row p-5 align-items-center">
-                <div class="col-lg-5 col-md-12 col-xs-12">
-                    <img src="./img/index/Pato.jpg" class="img-thumbnail" alt="foto del pato tocando la trompeta">
-                </div>   
+            <div class="row p-5 align-items-center home__pato">
                 <div class="col-lg-7 col-md-12 col-xs-12 home__historia">
                     <h2 class="home__historia">27 de septiembre - Dia del hincha de Alumni</h2>
                     <article class="home__historia">
@@ -134,48 +132,38 @@
                         dar homenaje nomabrando a dicho dia (27 de septiembre) como el dia del hincha de Alumni
                     </article>
                 </div>
-                <div class="row p-5 align-items-center">
+                <div class="col-lg-5 col-md-12 col-xs-12">
+                    <img src="./img/index/Pato.jpg" class="img-thumbnail" alt="foto del pato tocando la trompeta">
+                </div>                      
+            </div>
 
-                    <div class="col-lg-7 col-md-12 col-xs-12 home__historia">
-                        <h2 class="home__historia">El Ascenso</h2>
-                        <article class="home__historia">
-                            En 2006 Alumni consiguio lo que seria su mas grande logro a nivel futbolistico, el preciado
-                            ascenso al torneo Federal A, tercera categoria del futbol argentino. 
-                        </article>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-xs-12">
-                        <img src="./img/index/festejoascenso.jpeg" class="img-thumbnail" alt="festejo del ascenso">
-                    </div>
+            <div class="row p-5 align-items-center">
+
+                <div class="col-lg-7 col-md-12 col-xs-12 home__historia">
+                    <h2 class="home__historia">El Ascenso</h2>
+                    <article class="home__historia">
+                        En 2006 Alumni consiguio lo que seria su mas grande logro a nivel futbolistico, el preciado
+                        ascenso al torneo Federal A, tercera categoria del futbol argentino. 
+                    </article>
+                </div>
+                <div class="col-lg-5 col-md-12 col-xs-12">
+                    <img src="./img/index/festejoascenso.jpeg" class="img-thumbnail" alt="festejo del ascenso">
                 </div>
             </div>
+
         </section>
 
     </main>  
 
     <!--Pie de pagina-->
     <footer class="footer">
-
-            <!-- Menu de navegacion del footer -->
-            <nav class="footer__nav">
-                <ul>
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="./pages/equipos.html">
-                        <li>Equipos Historicos</li>
-                    </a>
-                    <a href="./pages/campeonatos.html">
-                        <li>Campeonatos</li>
-                    </a>
-                    <a href="./pages/galeria.html">
-                        <li>Galeria</li>
-                    </a>
-                    <a href="./pages/contacto.html">
-                        <li>Contacto</li>
-                    </a>
-                </ul>
-            </nav>
-
+        <section class="container-fluid">
+            
+            <!-- Boton para volver arriba -->
+            <div class="container-fluid boton">
+                <a href="#"><button type="button" class="btn btn-outline-danger col-12">Ir arriba</button></a>
+            </div>
+            
             <!-- Acceso directo a las redes del club -->
             <div class="footer__redes">
                 <a href="https://www.facebook.com/alumnivm" target="_blank"><img class="footer__redes-xf"
@@ -187,12 +175,15 @@
                 <a href="https://www.youtube.com/user/alumnivm" target="_blank"><img class="footer__redes-xf"
                         src="./img/logos-redes/youtube.png" alt="youtube"></a>
             </div>
-
+            
             <!-- Información general de copyright -->
             <div class="footer__copy">
                 <p>Copyright © 2022 - VH Programador Web - Todos los derechos reservados</p>
             </div>
-
+            
+        </section>
+      
+        
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
